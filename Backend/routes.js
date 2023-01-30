@@ -1,4 +1,9 @@
+const express = require('express');
+const app = express.Router();
+
 var usuariosController = require(__dirname + '/api/controladores/usuariosController.js').usuarios
+
+app.use(express.json());
 
 app.post("/Usuarios/Guardar",function(request,response){
     usuariosController.Guardar(request,response)

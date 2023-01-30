@@ -11,7 +11,7 @@ var UsuariosSchema = new Schema({
     codigo: String,
     nombre: String
 })
-console.log(UsuariosSchema)
+
 //se crea la coleccion de mongo y se le asigna el esquema 
 const Mymodel = mongoose.model('usuarios', UsuariosSchema)
 

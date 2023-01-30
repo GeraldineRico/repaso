@@ -2,7 +2,6 @@ var ModelUsuarios = require(__dirname + '/../modelos/modelUsuarios.js').usuarios
 
 var usuariosController = {}//objeto
 
-
 usuariosController.Guardar = function(request,response){
 
     //debe recibir datos para guardar 
