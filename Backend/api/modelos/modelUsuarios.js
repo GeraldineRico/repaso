@@ -27,7 +27,7 @@ ModelUsuarios.Guardar = function(post, callback){
             return callback ({state:false,data:error})
         }
         else{
-            return callback ({state:true,mensaje:creado})
+            return callback ({state:true})
         }
     } ) 
 
@@ -86,9 +86,5 @@ ModelUsuarios.Eliminar = function(post, callback){
         }
     })
 }
-
-
-
-
 
 module.exports.usuarios = ModelUsuarios
